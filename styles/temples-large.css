@@ -8,5 +8,7 @@ nav.navigation {
   display: none;
 }
 
+
+
 .grid-container {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

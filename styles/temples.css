@@ -5,43 +5,79 @@ body {
 }
 
 header {
-  background-color: #444;
-  color: white;
+  background-color: #bdbdbd;
+  color: rgb(0, 0, 0);
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 #menu {
   background: none;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1.5rem;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
   cursor: pointer;
+  display: none;  
 }
 
-nav.navigation {
-  display: none;
-  flex-direction: column;
-  background-color: #666;
+ nav.navigation {
+  display: flex;
+  gap: 1rem;
 }
 
 nav.navigation a {
-  color: white;
+  color: rgb(10, 0, 0);
   padding: 0.5rem;
   text-decoration: none;
 }
 
 nav.navigation a:hover {
   background-color: #888;
+  border-radius: 4px;
 }
 
-.show {
-  display: flex;
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menu {
+    display: block;
+    align-self: flex-end;
+    margin-bottom: 0.5rem;
+  }
+
+  nav.navigation {
+    display: none;
+    flex-direction: column;
+    background-color: #bdbcbc;
+    width: 100%;
+    padding: 0;
+  }
+
+  nav.navigation.show {
+    display: flex;
+  }
+
+  nav.navigation a {
+    width: 100%;
+    padding: 1rem;
+    border-top: 1px solid #999;
+  }
 }
 
+/* Resto igual */
 main {
   max-width: 800px;
   margin: 0 auto;
@@ -51,7 +87,7 @@ main {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem; /* spacing between images */
+  gap: 1rem;
   padding: 1rem;
 }
 
