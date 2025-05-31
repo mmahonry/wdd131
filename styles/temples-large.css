@@ -1,0 +1,13 @@
+nav.navigation {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#menu {
+  display: none;
+}
+
+.grid-container {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
