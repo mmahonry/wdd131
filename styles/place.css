@@ -1,0 +1,90 @@
+:root {
+  --primary-color: #cc233f;
+  --secondary-color: #006847;
+  --text-color: #ffffff;
+  --card-bg: rgba(207, 207, 207, 0.9);
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--text-color);
+  color: #000000;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+main {
+  position: relative;
+  text-align: left;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 100vh;
+}
+
+/* CARD BASE */
+.card {
+  position: absolute;
+  background-color: var(--card-bg);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  border-left: 8px solid var(--secondary-color);
+  max-width: 250px;
+  width: 90%;
+  font-size: 0.95rem;
+  z-index: 10;
+}
+
+/* Desktop card positions */
+.data-card {
+  top: 10%;
+  left: 5%;
+}
+
+.weather-card {
+  bottom: 10%;
+  right: 5%;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ✅ RESPONSIVE FIX FOR MOBILE */
+@media (max-width: 768px) {
+  .card {
+    position: static;
+    max-width: 100%;
+    margin: 1rem auto;
+    width: calc(100% - 2rem); /* padding on sides */
+  }
+
+  .hero {
+    margin-bottom: 2rem;
+  }
+}

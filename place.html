@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Mahonry Munoz</title>
+  <meta name="description" content="WDD 131 Dynamic Web Fundamentals, I’m Mahonry Munoz from Mexico. Learn more about me, my interests, and my journey in WDD 131 course landing page with HTML, CSS, and JavaScript." />
+   <meta name="author" content="Mahonry Munoz" />
+  <title>Madagascar</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Mexico</h1>
+  </header>
+
+  <main>
+    <div class="hero">
+       <source srcset="images/mexico_icon.png" media="(min-width: 60
+       0px)" />
+        <img src="images/mexico-city.jpg" alt="Hero image of [Country]" />
+      <div class="card data-card">
+        <h2>Data</h2>
+        <ul>
+          <li><strong>Area:</strong> 1,964,375 sq km</li>
+          <li><strong>Population:</strong> 126,014,024</li>
+          <li><strong>Capital:</strong> Mexico City</li>
+          <li><strong>Languages:</strong> Spanish</li>
+          <li><strong>Currency:</strong> Mexican Peso (MXN)</li>
+          <li><strong>Time Zone:</strong> UTC−6 to UTC−8</li>
+          <li><strong>Calling Code:</strong> +52</li>
+          <li><strong>Internet TLD:</strong> .mx</li>
+        </ul>
+      </div>
+
+      <div class="card weather-card">
+        <h2>Weather</h2>
+        <ul>
+          <li><strong>Temperature:</strong> 22 °C</li>
+          <li><strong>Conditions:</strong> Mostly Sunny</li>
+          <li><strong>Wind:</strong> 10 km/h</li>
+          <li><strong>Wind Chill:</strong> <span id="windChill"></span></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2024 🌮 Mahonry Muñoz 🌵 Mexico</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="place.js"></script>
+</body>
+</html>
