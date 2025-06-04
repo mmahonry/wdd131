@@ -90,14 +90,7 @@ main {
   padding: 1rem;
 }
 
-figure {
-  margin: 0;
-  padding: 0.5rem;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
+
 
 figure img {
   width: 100%;
