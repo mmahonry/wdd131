@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131 – Dynamic Web Fundamentals – Mahonry Munoz</title>
+  <meta name="description" content="WDD 131 Dynamic Web Fundamentals, I’m Mahonry Munoz from Mexico. Learn more about me, my interests, and my journey in WDD 131 course landing page with HTML, CSS, and JavaScript." />
+  <meta name="author" content="Mahonry Munoz" />
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+  <script src="scripts/filtered-temples.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu" aria-label="Toggle Menu">☰</button>
+    <nav class="navigation">
+      <a href="#" data-filter="home">Home</a>
+      <a href="#" data-filter="old">Old</a>
+      <a href="#" data-filter="new">New</a>
+      <a href="#" data-filter="large">Large</a>
+      <a href="#" data-filter="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temples Around the World</h1>
+    <section id="templeContainer" class="grid-container">
+     </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Mahonry | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
