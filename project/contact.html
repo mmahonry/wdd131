@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GreenPath Fitness - Contact</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <script defer src="scripts/home.js"></script>
+</head>
+<body>
+  <header>
+  <div class="branding">
+    <img src="images/green_logo.png" alt="GreenPath Logo" class="logo">
+    <h1>GreenPath Fitness</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <section class="contact-intro" style="text-align:center; padding:2rem;">
+      <h2>Contact Us</h2>
+      <p>Have a question or want to get started? Send us a message!</p>
+    </section>
+
+    <section class="contact-form-section" style="max-width: 600px; margin: 0 auto; padding: 2rem;">
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="program">Interested Program:</label>
+        <select id="program" name="program">
+          <option value="beginner">Beginner Program</option>
+          <option value="weight-loss">Weight Loss</option>
+          <option value="muscle-gain">Muscle Gain</option>
+          <option value="wellness">Wellness & Recovery</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 GreenPath Fitness</p>
+    <a href="references.html">Image & Content References</a>
+  </footer>
+</body>
+</html>
